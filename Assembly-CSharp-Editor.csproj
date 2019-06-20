@@ -319,6 +319,9 @@
     <Reference Include="websocket-sharp">
       <HintPath>C:/temp/NSF-Mass_Production/Assets/Scripts/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>C:/temp/NSF-Mass_Production/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/temp/NSF-Mass_Production/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -333,9 +336,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/temp/NSF-Mass_Production/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>C:/temp/NSF-Mass_Production/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -717,9 +717,21 @@
       <Project>{6024FA86-585B-B65B-8D8D-AEEECA773B27}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{A3566239-F4C3-150B-2264-409EA2EEC269}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{A5AE74AA-83CA-29AB-EF13-BA9D5FF58625}</Project>
+      <Name>SteamVR_Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{8CD5C43D-C22D-4064-3471-A65F444CB20D}</Project>
       <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{30047027-7230-03FE-AEBE-52690134501A}</Project>
+      <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{0D906C3E-A849-270F-E46D-4C5D56F4B4B8}</Project>
@@ -729,21 +741,13 @@
       <Project>{67BB923B-B71B-F12B-3204-BA5AE85EF32E}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{A3566239-F4C3-150B-2264-409EA2EEC269}</Project>
-      <Name>SteamVR_Input_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{A5AE74AA-83CA-29AB-EF13-BA9D5FF58625}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{30047027-7230-03FE-AEBE-52690134501A}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{04AFB15C-444B-8E8A-CB39-1A88C7049A11}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{713D6B84-C1AA-C3A3-0908-74296DD1B036}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
